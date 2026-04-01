@@ -1,0 +1,152 @@
+:root {
+    --accent: #2563eb;
+    --text: #1f2937;
+    --bg: #f3f4f6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* ── Top bar ── */
+.top-bar {
+    height: 6px;
+    background-color: var(--accent);
+}
+
+/* ── Nav ── */
+.back-nav {
+    padding: 1.2rem 2rem;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: opacity 0.2s;
+}
+
+.back-btn:hover { opacity: 0.75; }
+
+/* ── Hero ── */
+.hero {
+    background: white;
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.hero-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    background-color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.05rem;
+    color: #6b7280;
+}
+
+/* ── Content ── */
+.content {
+    max-width: 860px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ── Cards ── */
+.card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    border-left: 4px solid var(--accent);
+}
+
+.card h2 {
+    font-size: 1.15rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.card p,
+.card ul {
+    color: #4b5563;
+    font-size: 0.97rem;
+}
+
+.card ul {
+    list-style: disc;
+    padding-left: 1.4rem;
+}
+
+.card ul li {
+    margin-bottom: 0.4rem;
+}
+
+/* placeholder style */
+.placeholder {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+/* ── Tags ── */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.tag {
+    background-color: color-mix(in srgb, var(--accent) 10%, white);
+    color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, white);
+    border-radius: 999px;
+    padding: 0.25rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    .hero h1 { font-size: 1.8rem; }
+    .content { padding: 0 1rem; }
+}
