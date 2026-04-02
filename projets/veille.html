@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique – L'informatique dans le sport</title>
+    <link rel="stylesheet" href="../assets/CSS/projet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style> :root { --accent: #2563eb; } </style>
+</head>
+<body>
+
+    <div class="top-bar"></div>
+
+    <nav class="back-nav">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Retour au portfolio
+        </a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-icon">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <h1>Veille Technologique</h1>
+        <p class="subtitle">L'informatique dans le sport professionnel</p>
+    </header>
+
+    <main class="content">
+
+        <div class="card">
+            <h2><i class="fas fa-align-left"></i> 1. Introduction</h2>
+            <p>
+                La cybersécurité, le réseau, la data et l'intelligence artificielle sont aujourd'hui partout dans nos vies, et notamment dans le sport. Il est pertinent aujourd'hui de savoir en bénéficier afin d'avoir un temps d'avance sur ses concurrents. La data dans le milieu sportif est un outil extrêmement puissant et recherché par de nombreuses institutions : grâce à la data, de nombreuses équipes peuvent savoir qui sera leur prochain coach ou joueur rien qu'en se renseignant à l'aide de l'informatique.
+            </p>
+            <br>
+            <p>
+                Savoir utiliser ce domaine n'est pas juste une chance, c'est une innovation qui permet de trouver une personne en fonction du style de jeu, de l'argent à débourser ou encore de ses performances récentes. Sur le plan économique, social et sportif, ça devient obligatoire de savoir qui acheter, quand et pourquoi. De plus, la Data permet aussi de suivre ses propres joueurs : conditions physiques, performances, santé mentale — tout est calculé et redirigé dans une base de données afin d'en savoir plus et d'être opérationnel en temps voulu.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-tools"></i> 2. Démarche de veille (méthode et outils)</h2>
+            <p>
+                Pour ce faire, j'ai utilisé les outils <strong>Feedly</strong> et <strong>Google Alerts</strong> pour une méthode de veille Push efficace, car de nombreux outils, techniques et technologies sortent fréquemment. J'ai ciblé des sources techniques et institutionnelles afin d'assurer l'actualité, la fiabilité et le lien avec mon option SISR des informations sur l'infrastructure et la cybersécurité sportives.
+            </p>
+            <br>
+            <p>
+                Les réseaux sociaux ont aussi été considérés comme un outil complémentaire, utiles pour avoir des données plus « niche ». J'ai veillé à bien vérifier mes sources via les comptes et sites officiels des clubs ou des joueurs, car ce ne sont pas toujours des sources fiables.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-lightbulb"></i> 3. Analyse des tendances et innovations</h2>
+
+            <h3 style="color: var(--accent); margin: 0 0 0.6rem;">Première tendance — Edge Computing</h3>
+            <p>
+                L'Edge Computing, mature depuis 2023-2024, rapproche le traitement des données du terrain pour minimiser la latence à la milliseconde près, offrant des analyses tactiques instantanées aux coachs. Bien que l'installation initiale puisse être coûteuse, cette architecture réduit les frais de bande passante Cloud.
+            </p>
+            <br>
+            <p>
+                Pour le SISR, cette tendance exige la maîtrise de la conteneurisation légère (<strong>Docker/K3s</strong>) pour les déploiements sur les dispositifs Edge, ainsi que l'expertise en réseaux ultra-rapides (<strong>Wi-Fi 6/5G</strong>) et en gestion de l'IoT, afin d'assurer la performance et la sécurisation des mini-serveurs locaux, points d'accès critiques.
+            </p>
+
+            <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0;">
+
+            <h3 style="color: var(--accent); margin: 0 0 0.6rem;">Deuxième tendance — Architectures Data Lake</h3>
+            <p>
+                Le passage aux Architectures Data Lake, fortement accéléré depuis 2022-2023, permet aux organisations sportives de stocker des volumes massifs de données brutes (vidéos, statistiques, données non structurées) pour optimiser le recrutement par des modèles d'IA et affiner la stratégie. Cet impact sur les standards délaisse les bases SQL traditionnelles au profit de technologies <strong>NoSQL</strong> et du stockage objet (<strong>S3, Azure Blob Storage</strong>).
+            </p>
+            <br>
+            <p>
+                Pour l'administrateur SISR, cela se traduit par l'impératif de maîtriser l'architecture Big Data (Data Lake Storage, Hadoop), de garantir l'intégrité et l'accessibilité des référentiels, et surtout d'appliquer une cybersécurité renforcée (IAM, Chiffrement) pour protéger ces actifs stratégiques contre les fuites d'informations tactiques et de recrutement.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-flask"></i> 4. Applications pratiques et exemples concrets</h2>
+
+            <h3 style="color: var(--accent); margin: 0 0 0.6rem;">Exemple 1 — SkillCorner : L'analyse vidéo comme source de Big Data</h3>
+            <p>
+                SkillCorner est une entreprise française leader qui utilise le <em>Computer Vision</em> et l'IA pour générer des données de tracking XY (position et mouvement des joueurs) et des données physiques (vitesse, accélération) à partir de n'importe quel flux vidéo unique. Leur technologie permet aux clubs d'obtenir des données de scouting standardisées sur plus de 120 compétitions mondiales. Les clubs de Brighton ainsi que Toulouse utilisent la data dans le foot — technique qui fonctionne, car les deux clubs recrutent de jeunes pépites pour les revendre et visent les compétitions européennes.
+            </p>
+            <br>
+            <p>
+                <strong>Lien SISR :</strong> La solution de SkillCorner repose sur l'ingestion de millions de flux vidéo et la transformation de ces pixels en Big Data structuré (plus d'un million de points de données par match). L'équipe informatique du club client doit s'assurer que l'API fournie par SkillCorner est intégrée de manière sécurisée (authentification forte, gestion des jetons d'accès) dans le Data Lake du club. Le volume et la vélocité de cette donnée exigent des serveurs performants et une solution de stockage objet ou Cloud à haute disponibilité.
+            </p>
+
+            <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0;">
+
+            <h3 style="color: var(--accent); margin: 0 0 0.6rem;">Exemple 2 — Elevate Agency : Architecture Data et Gouvernance</h3>
+            <p>
+                Elevate Agency est un cabinet de conseil spécialisé en Data & IA et en infrastructure Cloud (GCP, AWS, Azure). Bien qu'ils travaillent pour de nombreux secteurs (banque, luxe), leur expertise sur la construction de <em>pipelines de données robustes</em> et l'implémentation de la gouvernance des données (sécurité, conformité) est directement applicable aux fédérations ou aux grands clubs.
+            </p>
+            <br>
+            <p>
+                <strong>Lien SISR :</strong> Une mission typique d'Elevate pour un client sportif consiste à concevoir l'architecture Cloud du club et à s'assurer que son système d'information est évolutif et conforme. L'intervention porte sur la Data Tech : ingénierie et mise en œuvre des pipelines de données, choix des architectures de stockage Cloud (Data Lake) pour sécuriser le patrimoine informationnel.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-exclamation-triangle"></i> 5. Analyse critique</h2>
+            <p>
+                Ce domaine est très prometteur, mais pas sans risque. De nombreuses cyberattaques sont commises et peuvent nuire gravement à l'entreprise : pertes de données, revente de données sensibles. Quand on possède des données personnelles telles que la santé physique et mentale d'un joueur collectées par des capteurs, ces informations sont considérées comme des données sensibles et exigent une conformité stricte au <strong>RGPD</strong> en Europe. Les données sur des joueurs à repérer ne doivent pas fuiter et rester secrètes.
+            </p>
+            <br>
+            <p>
+                Par ailleurs, l'adoption du Big Data et de l'Edge Computing nécessite des infrastructures serveurs et réseaux de pointe, impliquant des coûts d'acquisition du matériel et des licences logicielles pour l'analyse et la supervision.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-flag-checkered"></i> 6. Synthèse et conclusion</h2>
+            <p>
+                Ce que je retiens de cette étude, c'est à quel point mon futur rôle d'administrateur SISR va compter dans la performance sportive. Pour être concret, je devrai maîtriser l'infrastructure Big Data pour analyser les performances, mettre en place des solutions Edge Computing pour gagner en réactivité tactique, et surtout garantir la sécurité des données sensibles (informations médicales, recrutement) dans le respect du RGPD.
+            </p>
+            <br>
+            <p>
+                Tout ça me pousse à me spécialiser en architecture Cloud/Edge et en sécurité des données massives. Dans les mois à venir, je vais particulièrement me concentrer sur l'automatisation des architectures (<strong>DevSecOps</strong>), la sécurisation des API de suivi des performances, et l'optimisation des coûts Cloud (<strong>FinOps</strong>) pour une exploitation à la fois efficace et maîtrisée.
+            </p>
+        </div>
+
+        <div class="card sources-card">
+            <h2><i class="fas fa-book"></i> 7. Sources et références</h2>
+            <ol class="sources-list">
+                <li>
+                    <span class="source-author">Google Newsletter, Feedly, Elevate Agency</span> —
+                    <em>La Data dans le sport</em><br>
+                    <a href="https://www.elevate-agency.com/blog/data-sport" target="_blank">elevate-agency.com/blog/data-sport</a>
+                    <span class="source-date">Publié le 26/02/2024 · Consulté le 16/12/2025</span>
+                </li>
+                <li>
+                    <span class="source-author">Actutem</span> —
+                    <em>Comment l'IA et l'Edge Computing se mettent au service des performances sportives</em><br>
+                    <a href="https://www.actutem.com/comment-lia-etledge-computing-se-mettent-au-service-des-performances-sportives/" target="_blank">actutem.com/comment-lia-etledge-computing...</a>
+                    <span class="source-date">Publié le 07/04/2025 · Consulté le 20/03/2026</span>
+                </li>
+                <li>
+                    <span class="source-author">CentraleSupélec</span> —
+                    <em>La data au service du foot</em><br>
+                    <a href="https://www.youtube.com/watch?v=sPHD78Us_WE&pp=ygUYbGEgZGF0YSBkYW5zIGxlIGZvb3RiYWxs" target="_blank">youtube.com/watch?v=sPHD78Us_WE</a>
+                    <span class="source-date">Publié le 07/10/2021 · Consulté le 01/04/2026</span>
+                </li>
+                <li>
+                    <span class="source-author">We Are Brighton</span> —
+                    <em>The role of data analytics in football recruitment: Brighton's Strategy</em><br>
+                    <a href="https://www.wearebrighton.com/newsopinion/the-role-of-data-analytics-in-football-recruitment-brightonsstrategy/" target="_blank">wearebrighton.com/newsopinion/the-role-of-data-analytics...</a>
+                    <span class="source-date">Publié le 16/05/2024 · Consulté le 22/10/2025</span>
+                </li>
+                <li>
+                    <span class="source-author">Datasport</span> —
+                    <em>Information sur la récente cyberattaque</em><br>
+                    <a href="https://datasport.com/fr/actualites/informations-sur-la-recente-cyberattaque/" target="_blank">datasport.com/fr/actualites/informations-sur-la-recente-cyberattaque</a>
+                    <span class="source-date">Publié le 02/02/2024 · Consulté le 28/11/2025</span>
+                </li>
+            </ol>
+        </div>
+
+    </main>
+
+    <footer>Portfolio de Maxim Biernaux-Hackett</footer>
+
+</body>
+</html>
