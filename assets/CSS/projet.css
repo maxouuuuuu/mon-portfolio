@@ -146,6 +146,69 @@ footer {
     font-size: 0.85rem;
 }
 
+/* ── Sources ── */
+.sources-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    counter-reset: sources;
+}
+
+.sources-list li {
+    counter-increment: sources;
+    padding: 1rem 1.2rem;
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--accent);
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.sources-list li::before {
+    content: counter(sources);
+    position: absolute;
+    left: 0.9rem;
+    top: 1rem;
+    background-color: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.source-author {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.sources-list li a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-all;
+    font-size: 0.88rem;
+}
+
+.sources-list li a:hover {
+    text-decoration: underline;
+}
+
+.source-date {
+    display: block;
+    font-size: 0.82rem;
+    color: #9ca3af;
+    margin-top: 0.3rem;
+}
+
 @media (max-width: 600px) {
     .hero h1 { font-size: 1.8rem; }
     .content { padding: 0 1rem; }
