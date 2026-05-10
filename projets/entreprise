@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprise – Gestion de parc informatique</title>
+    <link rel="stylesheet" href="../assets/CSS/projet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style> :root { --accent: #16a34a; } </style>
+</head>
+<body>
+
+    <div class="top-bar"></div>
+
+    <nav class="back-nav">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Retour au portfolio
+        </a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-icon">
+            <i class="fas fa-building"></i>
+        </div>
+        <h1>Entreprise</h1>
+    </header>
+
+    <main class="content">
+
+        <div class="card">
+            <h2><i class="fas fa-align-left"></i> Description du projet</h2>
+            <p>Dans le cadre de mon alternance au Cabinet Merlin à Lyon, j'interviens au quotidien sur des missions de support et d'administration informatique. Ces missions couvrent la gestion du parc matériel, le déploiement de postes de travail et la gestion des incidents via un outil de ticketing professionnel.</p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-tasks"></i> Missions réalisées</h2>
+            <ul>
+                <li>Gestion du parc informatique (inventaire, suivi et maintenance des équipements) avec GLPI</li>
+                <li>Déploiement et configuration de machines (postes Windows, périphériques réseau)</li>
+                <li>Gestion des tickets d'incidents et de demandes avec GLPI</li>
+                <li>Dépannage et assistance aux utilisateurs (support de proximité)</li>
+                <li>Installation et mise à jour d'outils logiciels sur les postes de travail</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-wrench"></i> Technologies utilisées</h2>
+            <div class="tags">
+                <span class="tag">GLPI</span>
+                <span class="tag">Windows</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">Gestion de parc</span>
+                <span class="tag">Support utilisateur</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-flag-checkered"></i> Résultats</h2>
+            <p>Ces missions en entreprise m'ont permis de développer une vraie polyvalence en environnement professionnel : rigueur dans le suivi des tickets, autonomie lors des déploiements de machines, et sens du service lors des interventions auprès des utilisateurs.</p>
+        </div>
+
+    </main>
+
+    <footer>Portfolio de Maxim Biernaux-Hackett</footer>
+
+</body>
+</html>
